@@ -1,0 +1,18 @@
+    <main>
+        <section class="sabores">
+            <h2>Nossos Sabores</h2>
+            <div class="card">
+               
+                <ul>
+
+                    <li *ngFor= "let s of sabores">
+                        {{s.nome}} (TIPO: {{s.tipo}})
+                        <span *ngIf="s.disponivel"> - Disponivel</span>
+                        <span *ngIf="!s.disponivel"> - Indisponivel</span>
+                        
+                    </li>
+                </ul>
+                
+                </div>
+        </section>
+    </main>
